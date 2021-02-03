@@ -39,6 +39,7 @@ app.post('/find', function(req, res) {
     name: req.body.first_name.trim() + ' ' + req.body.last_name.trim(),
     domain: req.body.domain
   };
+  console.log(data)
 
   emailFinder(data)
   .then(function (email) {
